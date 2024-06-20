@@ -6,20 +6,41 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         //Variable Declaration
+        //Variable Declaration
         while(true) {
-            String num_1;
+            double num_1;
             double num_2;
             int choice;
             double result = 0;
             String answer;
 
 
-            System.out.print("Enter an arithmetic expression: ");
-            num_1 = scanner.nextLine();
+            System.out.print("Enter your first number: ");
+            num_1 = scanner.nextInt();
+            System.out.print("Enter your second number: ");
+            num_2 = scanner.nextInt();
 
-
+            displaychoices();
+            //choices
+            System.out.print("Enter your choice: ");
+            choice = scanner.nextInt();
+            switch (choice) {
+                case 1:
+                    result = add(num_1, num_2);
+                    break;
+                case 2:
+                    result = subtract(num_1, num_2);
+                    break;
+                case 3:
+                    result = multiply(num_1, num_2);
+                    break;
+                case 4:
+                    result = divide(num_1,num_2);
+                    break;
+            }
             // Display
             System.out.println("Result: " + result);
+
 
             System.out.print("Do you want to perform another calculation? (yes/no): ");
             answer = scanner.next();
@@ -27,16 +48,8 @@ public class Main {
             if (!answer.equalsIgnoreCase("yes")) {
                 break;
             }
-            scanner.nextLine();
         }
         scanner.close();
-    }
-
-    public static void parse(String num_1){
-        for (int i=0;i<num_1.length();i++){
-
-        }
-
     }
 
     public static void displaychoices(){
