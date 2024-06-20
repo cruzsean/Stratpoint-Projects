@@ -5,59 +5,51 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        //Variable Declaration
-        //Variable Declaration
         while(true) {
-            double num_1;
-            double num_2;
-            int choice;
-            double result = 0;
-            String answer;
+            try {
+                //Input Values
+                System.out.print("Enter your first number: ");
+                double num_1 = scanner.nextInt();
+                System.out.print("Enter your second number: ");
+                double num_2 = scanner.nextInt();
+                //Enter choices
+                displaychoices();
+                System.out.print("Enter your choice: ");
+                int choice = scanner.nextInt();
+                //calculate
+                double result = calculate(num_1, num_2, choice);
+                System.out.println("Result: " + result);
 
+                System.out.print("Do you want to perform another calculation? (y/n): ");
+                String answer = scanner.next();
 
-            System.out.print("Enter your first number: ");
-            num_1 = scanner.nextInt();
-            System.out.print("Enter your second number: ");
-            num_2 = scanner.nextInt();
-
-            displaychoices();
-            //choices
-            System.out.print("Enter your choice: ");
-            choice = scanner.nextInt();
-            switch (choice) {
-                case 1:
-                    result = add(num_1, num_2);
+                if (!answer.equalsIgnoreCase("y")) {
                     break;
-                case 2:
-                    result = subtract(num_1, num_2);
-                    break;
-                case 3:
-                    result = multiply(num_1, num_2);
-                    break;
-                case 4:
-                    result = divide(num_1,num_2);
-                    break;
-            }
-            // Display
-            System.out.println("Result: " + result);
-
-
-            System.out.print("Do you want to perform another calculation? (yes/no): ");
-            answer = scanner.next();
-
-            if (!answer.equalsIgnoreCase("yes")) {
-                break;
+                }
+            } catch (Exception e) {
+                System.out.println("Invalid Input. Make sure to enter numeric values only");
+                scanner.nextLine();
             }
         }
         scanner.close();
     }
 
-    public static void displaychoices(){
+    public static void displaychoices() {
         System.out.println("Choose an operation: (Choose the corresponding number only)");
         System.out.println("1. Addition");
         System.out.println("2. Subtraction");
         System.out.println("3. Multiplication");
         System.out.println("4. Division");
+    }
+
+    public static double calculate(double num_1, double num_2, int choice){
+        return switch (choice) {
+            case 1 -> add(num_1, num_2);
+            case 2 -> subtract(num_1, num_2);
+            case 3 -> multiply(num_1, num_2);
+            case 4 -> divide(num_1, num_2);
+            default -> num_1;
+        };
     }
 
     public static double add(double num_1, double num_2){
