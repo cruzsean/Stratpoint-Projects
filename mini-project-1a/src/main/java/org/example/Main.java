@@ -48,7 +48,7 @@ public class Main {
             case 2 -> subtract(num_1, num_2);
             case 3 -> multiply(num_1, num_2);
             case 4 -> divide(num_1, num_2);
-            default -> num_1;
+            default -> throw new IllegalArgumentException("Invalid choice. Please select 1, 2, 3, or 4.");
         };
     }
 
