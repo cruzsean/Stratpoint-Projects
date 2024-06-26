@@ -1,11 +1,12 @@
-package com.SeanCruz;
+package com.SeanCruz.model;
 
-class Book {
+
+public class Book {
 
     private String title;
     private String author;
     private String ISBN;
-    //Constrctor  initializes book values
+    //Constructor  initializes book values
     public Book(String title, String author, String ISBN) {
         this.title = title;
         this.author = author;
@@ -36,28 +37,5 @@ class Book {
         return ISBN;
     }
 
-}
-//Ebook that inherits from Book
-class Ebook extends Book{
-
-    public Ebook(String title, String author, String ISBN) {
-        super(title, author, ISBN);
-    }
-
-    public static  void callEbook() {
-        System.out.println("This is a Ebook: ");
-    }
-
-}
-//Physical Book that inherits from Boom
-class PhysicalBook extends Book{
-
-    public PhysicalBook(String title, String author, String ISBN) {
-        super(title, author, ISBN);
-    }
-
-    public static void callPhysicalBook(){
-        System.out.println("This is a Physical Book");
-    }
 }
 

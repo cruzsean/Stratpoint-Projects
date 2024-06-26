@@ -1,11 +1,20 @@
 package com.SeanCruz;
+import com.SeanCruz.model.BookTypes.Ebook;
+import com.SeanCruz.model.BookTypes.PhysicalBook;
+import com.SeanCruz.model.Book;
+import com.SeanCruz.service.Implementation.Library;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
+    private static final Scanner scan = new Scanner(System.in);
+    private static final Library library = new Library();
+
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        Library library = new Library();
         String choice;
     do {
         displayChoices();
@@ -13,49 +22,27 @@ public class Main {
         try {
             switch (choice){
                 case "1":
-                    String type;
-                    do {
-                        displaytypes();
-                        type = scan.nextLine();
-                        if (type.equals("1")) {
-                            Ebook.callEbook();
-                        } else if (type.equals("2")) {
-                            PhysicalBook.callPhysicalBook();
-                        } else {
-                            System.out.println("Invalid choice, Please Try Again");
-                        }
-                    } while (!type.equals("1") && !type.equals("2"));
-
-                    System.out.print("Enter Your Title: ");
-                    String title = scan.nextLine();
-
-                    System.out.print("Enter the Author: ");
-                    String author = scan.nextLine();
-
-                    System.out.print("Enter your ISBN: ");
-                    String ISBN = scan.nextLine();
-
-                    System.out.println("Your Book has been successfully added!");
-
-                    library.addBooks(new Book(title, author, ISBN));
+                    addBook();
+                    logger.info("Added Book");
                     break;
                 case "2":
-                    System.out.println("Please enter the TITLE of the book you want to remove");
-                    String inputTitle = scan.nextLine();
-                    library.removeBooks(inputTitle);
+                    removeBook();
+                    logger.info("Remove Book");
                     break;
                 case "3":
-                    System.out.println("Enter the book title you want to search:");
-                    String searchTitle = scan.nextLine();
-                    library.searchBook(searchTitle);
+                    searchBook();
+                    logger.info("Search for Book");
                     break;
                 case "4":
-                    System.out.println("These are all the current books in the library:\n");
-                    library.listAllBook();
+                    listAllBook();
+                    logger.info("Listed Book");
                     break;
                 case "5":
+                    logger.info("Exiting the Application.");
                     System.out.println("Exit");
                     break;
+                default:
+                    logger.warn("Invalid Input");
             }
         }catch (InputMismatchException e){
             System.out.println("Invalid input, please enter a valid choice.");
@@ -63,6 +50,8 @@ public class Main {
     }while(!choice.equalsIgnoreCase("5"));
         scan.close();
     }
+
+
     //Displays the main menu choices for the user
     public static void displayChoices(){
         System.out.println("========================================");
@@ -82,6 +71,50 @@ public class Main {
         System.out.println("1. E-book");
         System.out.println("2. Physical Book");
     }
+    //Displays how books are being added to the library
+    public static void addBook(){
+        String type;
+        do {
+            displaytypes();
+            type = scan.nextLine();
+            if (type.equals("1")) {
+                Ebook.callEbook();
+            } else if (type.equals("2")) {
+                PhysicalBook.callPhysicalBook();
+            } else {
+                System.out.println("Invalid choice, Please Try Again");
+            }
+        } while (!type.equals("1") && !type.equals("2"));
 
+        System.out.print("Enter Your Title: ");
+        String title = scan.nextLine();
+
+        System.out.print("Enter the Author: ");
+        String author = scan.nextLine();
+
+        System.out.print("Enter your ISBN: ");
+        String ISBN = scan.nextLine();
+
+        System.out.println("Your Book has been successfully added!");
+
+        library.addBooks(new Book(title, author, ISBN));
+    }
+    //Displays how to remove books from the library
+    public static void removeBook(){
+        System.out.println("Please enter the TITLE of the book you want to remove");
+        String inputTitle = scan.nextLine();
+        library.removeBooks(inputTitle);
+    }
+    //Displays how to search books from the library
+    public static void searchBook(){
+        System.out.println("Enter the book title you want to search:");
+        String searchTitle = scan.nextLine();
+        library.searchBook(searchTitle);
+    }
+    //Displays how to list all books from the library
+    public static void listAllBook(){
+        System.out.println("These are all the current books in the library:\n");
+        library.listAllBook();
+    }
 
 }

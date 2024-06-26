@@ -1,5 +1,6 @@
-com\SeanCruz\PhysicalBook.class
-com\SeanCruz\Library.class
+com\SeanCruz\model\BookTypes\Ebook.class
 com\SeanCruz\Main.class
-com\SeanCruz\Book.class
-com\SeanCruz\Ebook.class
+com\SeanCruz\service\LibraryService.class
+com\SeanCruz\model\BookTypes\PhysicalBook.class
+com\SeanCruz\model\Book.class
+com\SeanCruz\service\Implementation\Library.class

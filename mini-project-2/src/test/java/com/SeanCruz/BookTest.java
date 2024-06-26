@@ -1,5 +1,6 @@
 package com.SeanCruz;
 
+import com.SeanCruz.model.Book;
 import junit.framework.TestCase;
 
 public class BookTest extends TestCase {

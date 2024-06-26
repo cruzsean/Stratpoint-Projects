@@ -1,10 +1,13 @@
-package com.SeanCruz;
+package com.SeanCruz.service.Implementation;
+
+import com.SeanCruz.model.Book;
+import com.SeanCruz.service.LibraryService;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Library {
+public class Library implements LibraryService {
     List<Book> books;
 
     //Initializes the books list
@@ -31,7 +34,7 @@ public class Library {
             System.out.println("Book not found, Invalid Title");
     }
     //Search a book from the library
-    public void searchBook(String title){
+        public void searchBook(String title){
         boolean searchfound = false;
         for (Book b : books) {
             if (title.contains(b.getTitle())) {

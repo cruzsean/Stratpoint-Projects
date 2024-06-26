@@ -1,3 +1,6 @@
-C:\Java\Stratpoint-Projects\mini-project-2\src\main\java\com\SeanCruz\Library.java
-C:\Java\Stratpoint-Projects\mini-project-2\src\main\java\com\SeanCruz\Book.java
+C:\Java\Stratpoint-Projects\mini-project-2\src\main\java\com\SeanCruz\service\Implementation\Library.java
 C:\Java\Stratpoint-Projects\mini-project-2\src\main\java\com\SeanCruz\Main.java
+C:\Java\Stratpoint-Projects\mini-project-2\src\main\java\com\SeanCruz\model\BookTypes\PhysicalBook.java
+C:\Java\Stratpoint-Projects\mini-project-2\src\main\java\com\SeanCruz\model\BookTypes\Ebook.java
+C:\Java\Stratpoint-Projects\mini-project-2\src\main\java\com\SeanCruz\model\Book.java
+C:\Java\Stratpoint-Projects\mini-project-2\src\main\java\com\SeanCruz\service\LibraryService.java
