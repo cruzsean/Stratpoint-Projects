@@ -8,12 +8,17 @@ import org.slf4j.LoggerFactory;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
+/**
+ * The Main class is the entry point for the Library Management System application.
+ * It provides a console-based interface for users to manage a collection of books.
+ */
 public class Main {
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
     private static final Scanner scan = new Scanner(System.in);
     private static final Library library = new Library();
-
+    /**
+     * The main method that runs the application.
+     */
     public static void main(String[] args) {
         String choice;
     do {
@@ -51,8 +56,9 @@ public class Main {
         scan.close();
     }
 
-
-    //Displays the main menu choices for the user
+    /**
+     * Displays the main menu choices for the user.
+     */
     public static void displayChoices(){
         System.out.println("========================================");
         System.out.println("Welcome to the Library Management System");
@@ -65,13 +71,17 @@ public class Main {
         System.out.println("========================================");
         System.out.print("Enter your choice: ");
     }
-    //Display what type of books the user wants.
+    /**
+     * Displays the types of books the user can add.
+     */
     public static void displaytypes(){
         System.out.println("\nPlease Enter what kind of book do you want to add: ");
         System.out.println("1. E-book");
         System.out.println("2. Physical Book");
     }
-    //Displays how books are being added to the library
+    /**
+     * Displays the types of books the user can add.
+     */
     public static void addBook(){
         String type;
         do {
@@ -99,19 +109,25 @@ public class Main {
 
         library.addBooks(new Book(title, author, ISBN));
     }
-    //Displays how to remove books from the library
+    /**
+     * Handles the process of removing a book from the library.
+     */
     public static void removeBook(){
         System.out.println("Please enter the TITLE of the book you want to remove");
         String inputTitle = scan.nextLine();
         library.removeBooks(inputTitle);
     }
-    //Displays how to search books from the library
+    /**
+     * Handles the process of searching for a book in the library.
+     */
     public static void searchBook(){
         System.out.println("Enter the book title you want to search:");
         String searchTitle = scan.nextLine();
         library.searchBook(searchTitle);
     }
-    //Displays how to list all books from the library
+    /**
+     * Handles the process of listing all books in the library.
+     */
     public static void listAllBook(){
         System.out.println("These are all the current books in the library:\n");
         library.listAllBook();

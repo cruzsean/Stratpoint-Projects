@@ -6,7 +6,10 @@ import com.SeanCruz.service.LibraryService;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
+/**
+ * The Library class implements the LibraryService interface and provides methods
+ * to manage a collection of books.
+ */
 public class Library implements LibraryService {
     List<Book> books;
 
@@ -14,11 +17,18 @@ public class Library implements LibraryService {
     public Library() {
         this.books= new ArrayList<>();
     }
-    //Adds a book to the library
+    /**
+     * Adds a book to the library.
+     *
+     * @param book The book to be added.
+     */
     public void addBooks(Book book){
         books.add(book);
     }
-    //Removes a book from the library
+    /**
+     * Removes a book from the library by its title.
+     * @param title The title of the book to be removed.
+     */
     public void removeBooks(String title){
         Iterator<Book> it = books.iterator();
         boolean bookfound = false;
@@ -33,7 +43,10 @@ public class Library implements LibraryService {
         if(!bookfound)
             System.out.println("Book not found, Invalid Title");
     }
-    //Search a book from the library
+    /**
+     * Searches for a book in the library by its title.
+     * @param title The title of the book to be searched for.
+     */
         public void searchBook(String title){
         boolean searchfound = false;
         for (Book b : books) {
@@ -48,7 +61,9 @@ public class Library implements LibraryService {
         if (!searchfound)
             System.out.println("Sorry, Book not found");
     }
-    //List all the available books within the library
+    /**
+     * Lists all the books currently in the library.
+     */
     public void listAllBook(){
         for (Book b: books) {
             System.out.print("Title: " + b.getTitle() + " " +
@@ -57,4 +72,8 @@ public class Library implements LibraryService {
 
         }
     }
+    public List<Book> getBooks() {
+        return books;
+    }
+
 }
