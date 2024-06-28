@@ -1,4 +1,4 @@
-# Mini Project 2: E-commerce System
+# Mini Project 3: E-commerce System
 
 <h2>Description</h2> 
 
