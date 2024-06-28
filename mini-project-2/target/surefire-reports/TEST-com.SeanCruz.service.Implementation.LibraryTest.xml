@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.SeanCruz.service.Implementation.LibraryTest" time="0.041" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.SeanCruz.service.Implementation.LibraryTest" time="0.037" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PH"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\Sean Frederick Cruz\AppData\Local\Temp\surefire10998224203957001636\surefirebooter-20240627173324903_3.jar C:\Users\Sean Frederick Cruz\AppData\Local\Temp\surefire10998224203957001636 2024-06-27T17-33-24_789-jvmRun1 surefire-20240627173324903_1tmp surefire_0-20240627173324903_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Sean Frederick Cruz\AppData\Local\Temp\surefire2033533519041789450\surefirebooter-20240628120153425_3.jar C:\Users\Sean Frederick Cruz\AppData\Local\Temp\surefire2033533519041789450 2024-06-28T12-01-53_281-jvmRun1 surefire-20240628120153425_1tmp surefire_0-20240628120153425_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Java\Stratpoint-Projects\mini-project-2\target\test-classes;C:\Java\Stratpoint-Projects\mini-project-2\target\classes;C:\Users\Sean Frederick Cruz\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.1\junit-jupiter-api-5.8.1.jar;C:\Users\Sean Frederick Cruz\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Sean Frederick Cruz\.m2\repository\org\junit\platform\junit-platform-commons\1.8.1\junit-platform-commons-1.8.1.jar;C:\Users\Sean Frederick Cruz\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Sean Frederick Cruz\.m2\repository\org\junit\vintage\junit-vintage-engine\5.8.1\junit-vintage-engine-5.8.1.jar;C:\Users\Sean Frederick Cruz\.m2\repository\org\junit\platform\junit-platform-engine\1.8.1\junit-platform-engine-1.8.1.jar;C:\Users\Sean Frederick Cruz\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Sean Frederick Cruz\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Sean Frederick Cruz\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\Sean Frederick Cruz\.m2\repository\org\apache\logging\log4j\log4j-core\2.23.1\log4j-core-2.23.1.jar;C:\Users\Sean Frederick Cruz\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\Sean Frederick Cruz\.m2\repository\org\apache\logging\log4j\log4j-slf4j2-impl\2.23.1\log4j-slf4j2-impl-2.23.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Sean Frederick Cruz\AppData\Local\Temp\surefire10998224203957001636\surefirebooter-20240627173324903_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Sean Frederick Cruz\AppData\Local\Temp\surefire2033533519041789450\surefirebooter-20240628120153425_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
@@ -57,7 +57,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testListAllBook" classname="com.SeanCruz.service.Implementation.LibraryTest" time="0.019">
+  <testcase name="testListAllBook" classname="com.SeanCruz.service.Implementation.LibraryTest" time="0.016">
     <system-out><![CDATA[Title: Test Title 1 
 Author: Test Author 1 
 ISBN: 1234567890 
@@ -68,7 +68,7 @@ ISBN: 0987654321
 
 ]]></system-out>
   </testcase>
-  <testcase name="testRemoveBooks" classname="com.SeanCruz.service.Implementation.LibraryTest" time="0.004">
+  <testcase name="testRemoveBooks" classname="com.SeanCruz.service.Implementation.LibraryTest" time="0.003">
     <system-out><![CDATA[Your book has been removed
 ]]></system-out>
   </testcase>
@@ -79,12 +79,12 @@ Author: Test Author
 ISBN: 1234567890 
 ]]></system-out>
   </testcase>
-  <testcase name="testAddBooks" classname="com.SeanCruz.service.Implementation.LibraryTest" time="0.001"/>
-  <testcase name="testSearchBook_NotFound" classname="com.SeanCruz.service.Implementation.LibraryTest" time="0.001">
+  <testcase name="testAddBooks" classname="com.SeanCruz.service.Implementation.LibraryTest" time="0.0"/>
+  <testcase name="testSearchBook_NotFound" classname="com.SeanCruz.service.Implementation.LibraryTest" time="0.0">
     <system-out><![CDATA[Sorry, Book not found
 ]]></system-out>
   </testcase>
-  <testcase name="testRemoveBooks_NotFound" classname="com.SeanCruz.service.Implementation.LibraryTest" time="0.0">
+  <testcase name="testRemoveBooks_NotFound" classname="com.SeanCruz.service.Implementation.LibraryTest" time="0.001">
     <system-out><![CDATA[Book not found, Invalid Title
 ]]></system-out>
   </testcase>

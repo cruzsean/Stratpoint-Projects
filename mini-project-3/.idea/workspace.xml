@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="449e926d-782c-4370-a353-2deb1d469ac9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SystemLogs.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SeanCruz/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SeanCruz/service/AdminServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SeanCruz/service/CartServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SeanCruz/service/implement/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SeanCruz/service/implement/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/SeanCruz/ProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mini-project-2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mini-project-2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mini-project-2/target/surefire-reports/TEST-com.SeanCruz.BookTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mini-project-2/target/surefire-reports/TEST-com.SeanCruz.BookTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mini-project-2/target/surefire-reports/TEST-com.SeanCruz.service.Implementation.LibraryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mini-project-2/target/surefire-reports/TEST-com.SeanCruz.service.Implementation.LibraryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mini-project-2/target/surefire-reports/com.SeanCruz.service.Implementation.LibraryTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../mini-project-2/target/surefire-reports/com.SeanCruz.service.Implementation.LibraryTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/SeanCruz/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/SeanCruz/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SeanCruz/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/SeanCruz/service/CartServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/SeanCruz/service/implement/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/SeanCruz/service/implement/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/SeanCruz/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/SeanCruz/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/SeanCruz/service/CartServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/SeanCruz/service/implement/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/SeanCruz/service/implement/Cart.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "cruzsean"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/cruzsean/Stratpoint-Projects.git",
+    "accountId": "6717595a-cb45-423d-98cd-022d0fb38751"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2iUa3UYu5NYv81hSMjneoc5aJwA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Maven.mini-project-3 [clean].executor": "Run",
+    "Maven.mini-project-3 [compile].executor": "Run",
+    "Maven.mini-project-3 [install].executor": "Run",
+    "Maven.mini-project-3 [org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile].executor": "Run",
+    "Maven.mini-project-3 [org.codehaus.mojo:exec-maven-plugin:3.0.0:java].executor": "Run",
+    "Maven.mini-project-3 [test].executor": "Run",
+    "Maven.mini-project-3 [verify].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Java/Stratpoint-Projects/mini-project-3/src/main/resources"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Java\Stratpoint-Projects\mini-project-3\src\main\resources" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="449e926d-782c-4370-a353-2deb1d469ac9" name="Changes" comment="" />
+      <created>1719547410280</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719547410280</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassNotFoundException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,4 +1,4 @@
-package org.SeanCruz.model;
+package com.SeanCruz.model;
 
 public class Product {
     String id;
