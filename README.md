@@ -23,4 +23,4 @@
 
 ***Features***: Allows functionalities for both users and administrators to manage products and shopping carts.
 
-***More Details***: ([mini-project-3](https://github.com/cruzsean/Stratpoint-Projects/tree/a8272b73dc754f41c67edf8c02f35c5cb7ac6957/mini-project-3)
+***More Details***: [mini-project-3](https://github.com/cruzsean/Stratpoint-Projects/tree/a8272b73dc754f41c67edf8c02f35c5cb7ac6957/mini-project-3)
